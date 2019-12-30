@@ -1,0 +1,45 @@
+name: Project
+schemes:
+  Application:
+    build:
+      targets:
+       App_iOS: build
+options:
+  usesTabs: false
+  indentWidth: 2
+  tabWidth: 2
+  bundleIdPrefix: com.templateios.example
+  deploymentTarget:
+    iOS: 10.12
+  carthageBuildPath: ../Carthage/Build
+targets:
+  App:
+    type: application
+    platform:
+      - iOS
+    entitlements:
+      path: Project.entitlements
+      properties:
+        keychain-access-groups: 
+          - $(AppIdentifierPrefix)com.templateios.example
+    settings:
+      INFOPLIST_FILE: Sources/Info.plist
+      CLANG_ENABLE_OBJC_ARC: YES
+      SWIFT_OBJC_BRIDGING_HEADER: Sources/Project-Bridging-Header.h
+      VERSIONING_SYSTEM: apple-generic
+      DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+      TARGETED_DEVICE_FAMILY: 1
+    sources:
+      - Sources
+    dependencies:
+      - carthage: Material
+      - carthage: Motion
+      - carthage: JGProgressHUD
+      - carthage: KeychainAccess
+      - carthage: Kingfisher
+      - carthage: PinLayout
+      - carthage: RxSwift
+      - carthage: RxCocoa
+      - carthage: RxRelay
+      - carthage: ViewDSL
+

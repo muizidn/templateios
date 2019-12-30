@@ -1,0 +1,11 @@
+cache:
+ local: ~/Documents/Carthage
+
+repositoryMap:
+  - R.swift.Library:
+    - name: Rswift
+  - RxSwift:
+    - name: RxSwift
+    - name: RxRelay
+    - name: RxCocoa
+    - name: RxBlocking

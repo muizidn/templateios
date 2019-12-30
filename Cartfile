@@ -1,0 +1,7 @@
+github "CosmicMind/Material"
+github "ReactiveX/RxSwift" ~> 5.0
+github "JonasGessner/JGProgressHUD"
+github "layoutBox/PinLayout"
+github "kishikawakatsumi/KeychainAccess" "v3.2.0"
+github "muizidn/viewdsl" "master"
+github "onevcat/Kingfisher" "5.7.0"
